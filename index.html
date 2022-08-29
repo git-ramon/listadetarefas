@@ -7,6 +7,29 @@
     <title>Lista de Tarefas</title>
 </head>
 <body>
-    
+    <div class="todo-container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicione a sua tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" name="todo-input" placeholder="O que deseja Fazer ?" required>
+                <button type="submit" title="Adicionar">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite sua Tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit" title="Editar">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+    </div>
 </body>
 </html>
