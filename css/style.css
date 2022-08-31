@@ -30,3 +30,17 @@ button{
     border-radius: 8px;
     border: none;
 }
+
+button:hover{
+    color: #fff;
+}
+
+button:hover > i{
+    color: #fff;
+}
+
+button i{
+    color: #fff;
+    font-weight: bold;
+    pointer-events: none;
+}
