@@ -44,3 +44,15 @@ button i{
     font-weight: bold;
     pointer-events: none;
 }
+
+input, 
+select{
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #000000;
+}
+
+.hide{
+    display: none;
+}
