@@ -34,3 +34,17 @@ const saveTodo = (text, done = 0, save = 1) => {
   deleteBtn.classList.add("remove-todo");
   deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
   todo.appendChild(deleteBtn);
+
+  // Utilizando dados da localStorage
+  if (done) {
+    todo.classList.add("done");
+  }
+
+  if (save) {
+    saveTodoLocalStorage({ text, done: 0 });
+  }
+
+  todoList.appendChild(todo);
+
+  todoInput.value = "";
+};
