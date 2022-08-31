@@ -48,3 +48,24 @@ const saveTodo = (text, done = 0, save = 1) => {
 
   todoInput.value = "";
 };
+
+const toggleForms = () => {
+  editForm.classList.toggle("hide");
+  todoForm.classList.toggle("hide");
+  todoList.classList.toggle("hide");
+};
+
+const updateTodo = (text) => {
+  const todos = document.querySelectorAll(".todo");
+
+  todos.forEach((todo) => {
+    let todoTitle = todo.querySelector("h3");
+
+    if (todoTitle.innerText === oldInputValue) {
+      todoTitle.innerText = text;
+
+      // Utilizando dados da localStorage
+      updateTodoLocalStorage(oldInputValue, text);
+    }
+  });
+};
