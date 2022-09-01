@@ -78,3 +78,19 @@ button#cancel-edit-btn {
     width: 50%;
     color: #fff;
 }
+
+/* Todo Header */
+
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #D8BFD8;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
