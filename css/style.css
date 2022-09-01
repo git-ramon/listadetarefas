@@ -94,3 +94,34 @@ button#cancel-edit-btn {
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
 }
+
+/* Todo Form */
+
+#todo-form, 
+#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+#todo-form p,
+#edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: 0.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+    display: initial;
+    border-radius: 20px;
+}
