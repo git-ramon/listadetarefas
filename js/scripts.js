@@ -69,3 +69,19 @@ const updateTodo = (text) => {
     }
   });
 };
+
+const getSearchedTodos = (search) => {
+  const todos = document.querySelectorAll(".todo");
+
+  todos.forEach((todo) => {
+    const todoTitle = todo.querySelector("h3").innerText.toLowerCase();
+
+    todo.style.display = "flex";
+
+    console.log(todoTitle);
+
+    if (!todoTitle.includes(search)) {
+      todo.style.display = "none";
+    }
+  });
+};
