@@ -175,3 +175,9 @@ editForm.addEventListener("submit", (e) => {
 
   toggleForms();
 });
+
+searchInput.addEventListener("keyup", (e) => {
+  const search = e.target.value;
+
+  getSearchedTodos(search);
+});
