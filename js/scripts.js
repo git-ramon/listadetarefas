@@ -196,14 +196,19 @@ filterBtn.addEventListener("change", (e) => {
   filterTodos(filterValue);
 });
 
-
-
-
 // Local Storage
 const getTodosLocalStorage = () => {
   const todos = JSON.parse(localStorage.getItem("todos")) || [];
 
   return todos;
+};
+
+const loadTodos = () => {
+  const todos = getTodosLocalStorage();
+
+  todos.forEach((todo) => {
+    saveTodo(todo.text, todo.done, 0);
+  });
 };
 
 const saveTodoLocalStorage = (todo) => {
