@@ -1,7 +1,7 @@
 # listadetarefas
 Projeto Lista de Tarefas
 
-Demonstraçao: <a href="https://git-ramon.github.io/listadetarefas/" target="blank">Clique Aqui</a>
+Demonstraçao: <a href="https://git-ramon.github.io/listadetarefas/" target="_blank">Clique Aqui</a>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width="100" height="100" alt="javascript logo">
