@@ -1,5 +1,6 @@
 // Seleção de elementos
 const todoForm = document.querySelector("#todo-form");
+const toolbar = document.querySelector("#toolbar");
 const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
@@ -53,6 +54,7 @@ const toggleForms = () => {
   editForm.classList.toggle("hide");
   todoForm.classList.toggle("hide");
   todoList.classList.toggle("hide");
+  toolbar.classList.toggle("hide");
 };
 
 const updateTodo = (text) => {
