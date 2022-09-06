@@ -227,3 +227,13 @@ const removeTodoLocalStorage = (todoText) => {
   localStorage.setItem("todos", JSON.stringify(filteredTodos));
 };
 
+const updateTodoLocalStorage = (todoOldText, todoNewText) => {
+  const todos = getTodosLocalStorage();
+
+  todos.map((todo) =>
+    todo.text === todoOldText ? (todo.text = todoNewText) : null
+  );
+
+  localStorage.setItem("todos", JSON.stringify(todos));
+};
+
