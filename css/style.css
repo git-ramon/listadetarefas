@@ -54,7 +54,7 @@ select{
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 button.remove-todo {
@@ -196,4 +196,39 @@ button#cancel-edit-btn {
     color: #fff;
     text-decoration: line-through;
     font-style: italic;
+}
+
+/*  Responsive */
+
+@media (min-width: 1760px) and (max-width: 2560px) {
+    
+    .todo-container {
+        max-width: 50%;
+        padding-top: 5%;
+        margin-top: 10%;
+        font-size: 25px;
+    }
+
+    .todo{
+        padding: 3rem;
+    }
+
+    .todo h3{
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 3rem;
+    }
+
+    input, select {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    
+    .todo-container {
+        max-width: 80%;
+    }
 }
