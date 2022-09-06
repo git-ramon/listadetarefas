@@ -227,6 +227,16 @@ const removeTodoLocalStorage = (todoText) => {
   localStorage.setItem("todos", JSON.stringify(filteredTodos));
 };
 
+const updateTodoStatusLocalStorage = (todoText) => {
+  const todos = getTodosLocalStorage();
+
+  todos.map((todo) =>
+    todo.text === todoText ? (todo.done = !todo.done) : null
+  );
+
+  localStorage.setItem("todos", JSON.stringify(todos));
+};
+
 const updateTodoLocalStorage = (todoOldText, todoNewText) => {
   const todos = getTodosLocalStorage();
 
@@ -236,4 +246,6 @@ const updateTodoLocalStorage = (todoOldText, todoNewText) => {
 
   localStorage.setItem("todos", JSON.stringify(todos));
 };
+
+loadTodos();
 
