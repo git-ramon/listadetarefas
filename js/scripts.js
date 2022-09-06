@@ -189,3 +189,16 @@ eraseBtn.addEventListener("click", (e) => {
 
   searchInput.dispatchEvent(new Event("keyup"));
 });
+
+
+
+
+
+
+// Local Storage
+const getTodosLocalStorage = () => {
+  const todos = JSON.parse(localStorage.getItem("todos")) || [];
+
+  return todos;
+};
+
