@@ -202,3 +202,11 @@ const getTodosLocalStorage = () => {
   return todos;
 };
 
+const saveTodoLocalStorage = (todo) => {
+  const todos = getTodosLocalStorage();
+
+  todos.push(todo);
+
+  localStorage.setItem("todos", JSON.stringify(todos));
+};
+
